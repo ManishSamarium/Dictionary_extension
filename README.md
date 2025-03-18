@@ -63,8 +63,8 @@ This extension fetches word definitions from the Free Dictionary API:
 
 
 Apearance 
+![Screenshot 2025-03-19 012330](https://github.com/user-attachments/assets/7c7a8a51-fa78-4826-9c3b-1405ac5f0a3d)
 
-![alt text](image.png)
 
 
 Author- Manish Kumar
