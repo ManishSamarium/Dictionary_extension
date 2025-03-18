@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quick Dictionary</title>
+    <script src="popup.js" defer></script>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            width: 320px; 
+            padding: 15px; 
+            background: #f9f9f9; 
+            text-align: center;
+        }
+        
+        h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        input {
+            width: 100%; 
+            padding: 8px; 
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        button {
+            width: 100%; 
+            padding: 8px; 
+            margin-top: 5px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #searchBtn {
+            background: #007bff; 
+            color: white;
+        }
+
+        #historyBtn {
+            background: #28a745; 
+            color: white;
+        }
+
+        #clearHistory {
+            background: #dc3545; 
+            color: white;
+        }
+
+        button:hover {
+            opacity: 0.85;
+        }
+
+        p {
+            background: #fff;
+            padding: 8px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            max-height: 120px;
+            overflow-y: auto;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        li {
+            background: #e3f2fd;
+            margin: 5px 0;
+            padding: 8px;
+            border-radius: 5px;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        strong {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <h3>📖 Quick Dictionary</h3>
+    <input type="text" id="wordInput" placeholder="Enter a word...">
+    <button id="searchBtn">🔍 Find Meaning</button>
+    <p id="result"></p>
+
+    <hr>
+
+    <button id="historyBtn">📜 Show History</button>
+    <ul id="historyList"></ul>
+    <button id="clearHistory">🗑 Clear History</button>
+</body>
+</html>
